@@ -1,0 +1,10 @@
+观察者模式 ==> 发布-订阅模式：
+观察者模式：
+1，https://baijiahao.baidu.com/s?id=1639044219412817957&wfr=spider&for=pc
+2，http://c.biancheng.net/view/1390.html
+3，https://www.jianshu.com/p/4be5de46ec63
+4，https://www.cnblogs.com/milicool/p/11189629.html
+
+发布-订阅模式（经纪人，或者消息中间件）：
+5，https://zhuanlan.zhihu.com/p/51357583
+6，https://segmentfault.com/a/1190000018706349
