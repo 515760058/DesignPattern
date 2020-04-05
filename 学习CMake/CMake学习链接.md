@@ -2,6 +2,10 @@
 - cmake使用教程（一）-起步
 https://juejin.im/post/5a6f32e86fb9a01ca6031230
 - cmake使用教程（二）-添加库
+
+推荐这个https://www.cnblogs.com/dverdon/p/4573416.html
+
+注意：在TutorialConfig.h.in文件中添加#cmakedefine USE_MYMATH。
 https://juejin.im/post/5a6f3cda6fb9a01c9d32231c
 - cmake使用教程（三）-安装、测试、系统自检
 - cmake使用教程（四）-文件生成器

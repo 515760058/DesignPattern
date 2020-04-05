@@ -1,0 +1,16 @@
+// the configured options and settings for Tutorial
+
+//版本号
+#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
+#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
+
+//是否使用自己的mathfunctions库
+#cmakedefine USE_MYMATH
+
+// does the platform provide exp and log functions?
+//判断某系统平台是否有exp和log函数，从而决定是使用系统的还是使用自己提供的。
+#cmakedefine HAVE_LOG
+#cmakedefine HAVE_EXP
+
+
+

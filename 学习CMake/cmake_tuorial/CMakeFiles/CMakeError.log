@@ -1,0 +1,50 @@
+Determining if the function log exists failed with the following output:
+Change Dir: /home/zhangth/github/DesignPattern/学习CMake/cmake_tuorial/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3f032/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3f032.dir/build.make CMakeFiles/cmTC_3f032.dir/build
+make[1]: Entering directory '/home/zhangth/github/DesignPattern/学习CMake/cmake_tuorial/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3f032.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=log   -o CMakeFiles/cmTC_3f032.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘log’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_3f032
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f032.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=log    CMakeFiles/cmTC_3f032.dir/CheckFunctionExists.c.o  -o cmTC_3f032 -rdynamic 
+CMakeFiles/cmTC_3f032.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘log’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3f032.dir/build.make:97: recipe for target 'cmTC_3f032' failed
+make[1]: *** [cmTC_3f032] Error 1
+make[1]: Leaving directory '/home/zhangth/github/DesignPattern/学习CMake/cmake_tuorial/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3f032/fast' failed
+make: *** [cmTC_3f032/fast] Error 2
+
+
+Determining if the function exp exists failed with the following output:
+Change Dir: /home/zhangth/github/DesignPattern/学习CMake/cmake_tuorial/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_768d4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_768d4.dir/build.make CMakeFiles/cmTC_768d4.dir/build
+make[1]: Entering directory '/home/zhangth/github/DesignPattern/学习CMake/cmake_tuorial/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_768d4.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=exp   -o CMakeFiles/cmTC_768d4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘exp’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTC_768d4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_768d4.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=exp    CMakeFiles/cmTC_768d4.dir/CheckFunctionExists.c.o  -o cmTC_768d4 -rdynamic 
+CMakeFiles/cmTC_768d4.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x15)：对‘exp’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_768d4.dir/build.make:97: recipe for target 'cmTC_768d4' failed
+make[1]: *** [cmTC_768d4] Error 1
+make[1]: Leaving directory '/home/zhangth/github/DesignPattern/学习CMake/cmake_tuorial/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_768d4/fast' failed
+make: *** [cmTC_768d4/fast] Error 2
+
+
