@@ -1,7 +1,10 @@
 ```
-# 配置cmake，例如option参数
-cmake -DUSE_MYMATH=ON .
-cmake --build .
+
+mkdir build
+cd build
+
+# 配置cmake，例如option参数. 上级目录的CMakeLists.txt文件
+cmake -DUSE_MYMATH=ON ..
 
 # 编译，链接
 make
