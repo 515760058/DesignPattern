@@ -8,6 +8,13 @@ project (Tutorial)
 set (Tutorial_VERSION_MAJOR 1)
 set (Tutorial_VERSION_MINOR 0)
 
+# 输出一些信息
+message(STATUS ${PROJECT_VERSION})
+message(STATUS ${PROJECT_VERSION_MAJOR})
+message(STATUS ${PROJECT_VERSION_MINOR})
+message(STATUS ${PROJECT_VERSION_PATCH})
+message(STATUS ${PROJECT_VERSION_TWEAK})
+message(STATUS ${PROJECT_DESCRIPTION})
 
 # does this system provide the log and exp functions?
 # 检查系统平台是否提供了exp和log函数，决定是否定义HAVE_EXP和HAVE_LOG宏，从而在cpp中判断是使用系统的还是使用自己的。
@@ -103,5 +110,17 @@ do_test (-1 "-1 is 0")
 #=========================================================================
 
 
+#======================== cpack生成安装包 =================================
+# build a CPack driven installer package
+# 这个模块将包括当前平台项目所需要的任何运行时库
+include (InstallRequiredSystemLibraries)
+# 设置cpack变量
+set (CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
+set (CPACK_PACKAGE_VERSION_MAJOR "${Tutorial_VERSION_MAJOR}")
+set (CPACK_PACKAGE_VERSION_MINOR "${Tutorial_VERSION_MINOR}")
+# 加入CPack模块
+include (CPack)
+# 在执行cmake命令之后会生成CPackConfig.cmake和CPackSourceConfig.cmake文件
+#=========================================================================
 
 
