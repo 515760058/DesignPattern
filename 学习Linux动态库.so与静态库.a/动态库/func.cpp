@@ -1,11 +1,8 @@
 #include "func.h"
 
-
-extern "C"
+int myfunc(int x)
 {
-  int myfunc(int x)
-  {
-      return x*x;
-  }
+    return x*x;
 }
+
 

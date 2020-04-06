@@ -9,9 +9,14 @@ int test(int, int) -> _test
 float test(float, float) -> _test
 因此被 extern "C" 修饰过的函数也不再具备重载能力。
 */
-extern "C"
-{
-  int myfunc(int x);
-}
+#if defined(__cplusplus) || defined(c_plusplus) //跨平台定义方法
+extern "C"{
+#endif
+
+int myfunc(int x);
+
+#if defined(__cplusplus) || defined(c_plusplus)
+} // extern "C"
+#endif
 
 #endif //FUNC_H
